@@ -1,0 +1,57 @@
+* ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.book-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 35%;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-category {
+  /* ... */
+}
+
+.book-title {
+  /* ... */
+}
+
+.book-author {
+  /* ... */
+}
+
+.interactions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.interactions > li {
+  border: none;
+  background-color: transparent;
+}
+
+.book-progress {
+  display: flex;
+}
+
+.circular-progressbar {
+  width: 4.25rem;
+}
+
+.book-chapter {
+  /* ... */
+}
