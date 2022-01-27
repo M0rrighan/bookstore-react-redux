@@ -28,7 +28,7 @@ const Header = () => {
           ))}
         </nav>
       </div>
-      <div className="userIcon">
+      <div>
         <FaRegUserCircle />
       </div>
     </header>

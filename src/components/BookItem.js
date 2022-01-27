@@ -33,6 +33,7 @@ const BookItem = (props) => {
       </div>
       <div className="book-progress">
         <CircularProgressbar
+          className="circular-progressbar"
           value={progressPercent}
           style={{ width: '4.25rem', height: '4.25rem' }}
         />

@@ -18,7 +18,3 @@ nav {
   display: flex;
   gap: 1rem;
 }
-
-.userIcon {
-  justify-self: flex-end;
-}
