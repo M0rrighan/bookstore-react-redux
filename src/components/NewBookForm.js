@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import randomId from 'random-id';
-import { addBook } from '../redux/books/books';
+import { addNewBook } from '../redux/books/booksMiddleware';
 
 function NewBookForm() {
   const dispatch = useDispatch();
@@ -43,7 +43,7 @@ function NewBookForm() {
   ));
 
   const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState('');
+  // const [author, setAuthor] = useState('');
   const [category, setCategory] = useState('');
 
   const submitBookToStore = (e) => {
@@ -51,25 +51,25 @@ function NewBookForm() {
     const newBook = {
       id: randomId(),
       title,
-      author,
+      author: 'Unknown Author',
       category,
       progressPercent: 0,
       chapter: 'Not Updated',
     };
 
     // dispatch an action and pass it the newBook object
-    dispatch(addBook(newBook));
+    dispatch(addNewBook(newBook));
     // reset input fields
     setTitle('');
-    setAuthor('');
+    // setAuthor('');
   };
 
   const updateTitle = (e) => {
     setTitle(e.target.value);
   };
-  const updateAuthor = (e) => {
-    setAuthor(e.target.value);
-  };
+  // const updateAuthor = (e) => {
+  //   setAuthor(e.target.value);
+  // };
   const updateCategory = (e) => {
     setCategory(e.target.value);
   };
@@ -85,13 +85,13 @@ function NewBookForm() {
           value={title}
           required
         />
-        <input
+        {/* <input
           type="text"
           placeholder="Author"
           onChange={updateAuthor}
           value={author}
           required
-        />
+        /> */}
         <select
           onChange={updateCategory}
           defaultValue="Unset"
