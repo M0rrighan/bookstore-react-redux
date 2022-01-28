@@ -1,10 +1,17 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+
+import { loadListBooks } from '../redux/books/booksMiddleware';
 import BookItem from './BookItem';
 
 const BookList = () => {
-  const booksList = useSelector((state) => state.booksReducer);
+  const dispatch = useDispatch();
 
+  useEffect(() => {
+    dispatch(loadListBooks());
+  }, []);
+
+  const booksList = useSelector((state) => state.booksReducer);
   return (
     <ul className="books-ul">
       {
