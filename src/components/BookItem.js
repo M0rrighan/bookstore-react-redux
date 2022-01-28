@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
+import { removeBookItem } from '../redux/books/booksMiddleware';
 import './bookItem.css';
 
 const BookItem = (props) => {
@@ -13,7 +13,7 @@ const BookItem = (props) => {
   } = props;
 
   const removeBookFromStore = () => {
-    dispatch(removeBook({ id }));
+    dispatch(removeBookItem(id));
   };
 
   return (
