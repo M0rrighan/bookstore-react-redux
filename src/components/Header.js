@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { FaRegUserCircle } from 'react-icons/fa';
+import { FaUser } from 'react-icons/fa';
 import './header.css';
 
 const Header = () => {
@@ -8,11 +8,13 @@ const Header = () => {
       id: 1,
       path: '/',
       text: 'Books',
+      build: true,
     },
     {
       id: 2,
       path: '/Categories',
       text: 'Categories',
+      build: false,
     },
   ];
 
@@ -22,14 +24,25 @@ const Header = () => {
         <h2>Bookstore CMS</h2>
         <nav>
           {links.map((link) => (
-            <NavLink key={link.id} to={link.path} className="upper">
+            <NavLink
+              key={link.id}
+              to={link.path}
+              className="upper"
+              style={{
+                opacity: link.build ? '1' : '0.5',
+              }}
+            >
               {link.text}
             </NavLink>
           ))}
         </nav>
       </div>
-      <div>
-        <FaRegUserCircle />
+      <div className="user-icon-container">
+        <FaUser style={{
+          color: '#0290ff',
+          width: '1.063rem',
+        }}
+        />
       </div>
     </header>
   );
