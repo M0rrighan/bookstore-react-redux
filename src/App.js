@@ -8,7 +8,7 @@ import Header from './components/Header';
 import './App.css';
 
 const App = () => (
-  <Router>
+  <Router basename="/bookstore-react-redux">
     <div>
       <Header />
       <Routes>

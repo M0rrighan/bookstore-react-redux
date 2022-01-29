@@ -6,6 +6,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 1.438rem 6.25rem 1.688rem;
   font-family: Montserrat, sans-serif;
   background-color: #fff;
