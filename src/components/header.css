@@ -6,9 +6,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.438rem 6.25rem 1.688rem 6.25rem;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #fff;  
+  padding: 1.438rem 6.25rem 1.688rem;
+  font-family: Montserrat, sans-serif;
+  background-color: #fff;
   border-bottom: 1px solid #e8e8e8;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;

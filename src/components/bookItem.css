@@ -39,7 +39,7 @@
 }
 
 .book-category {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
   font-weight: bold;
   opacity: 0.5;
@@ -47,7 +47,7 @@
 }
 
 .book-title {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 1.375rem;
   font-weight: bold;
   letter-spacing: -0.2px;
@@ -55,10 +55,10 @@
 }
 
 .book-author {
-    font-family: 'Roboto Slab', serif;
-    font-size: 0.875rem;
-    font-weight: 300;
-    color: #4386bf;
+  font-family: "Roboto Slab", serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
 }
 
 .interactions {
@@ -69,7 +69,7 @@
 .interactions > li {
   border: none;
   background-color: transparent;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 0.875rem;
   font-weight: 300;
   color: #4386bf;
@@ -107,9 +107,9 @@
   width: 5.62rem;
 }
 
-.percent-num, 
+.percent-num,
 .percent-txt {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 .percent-num {
@@ -128,15 +128,15 @@
 }
 
 .book-item .book-chapter {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 300;
 }
 
-.book-chapter p {
+.book-item .book-chapter p {
   margin-bottom: 0.438rem;
 }
 
-.book-chapter button {
+.book-item .book-chapter button {
   margin-top: 1rem;
 }
 
@@ -145,8 +145,7 @@
   opacity: 0.5;
 }
 
-.book-chapter .chapter-title {
+.book-chapter .chapter-name {
   font-size: 1rem;
   letter-spacing: -0.4px;
 }
-
