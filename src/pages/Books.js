@@ -4,7 +4,7 @@ import BookList from '../components/BookList';
 
 function Books() {
   return (
-    <div>
+    <div className="books-page">
       <BookList />
       <NewBook />
     </div>
