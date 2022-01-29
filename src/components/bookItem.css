@@ -4,17 +4,33 @@
   padding: 0;
 }
 
+* li {
+  margin: 0;
+  padding: 0;
+}
+
 .upper {
   text-transform: uppercase;
 }
 
 .book-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3.688rem;
+  background-color: #fff;
+  padding: 2rem 1.688rem;
+  margin-bottom: 0.938rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
 }
 
 .left {
-  width: 35%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.313rem;
 }
 
 .book-info {
@@ -23,35 +39,114 @@
 }
 
 .book-category {
-  /* ... */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  opacity: 0.5;
+  margin-bottom: 0.25rem;
 }
 
 .book-title {
-  /* ... */
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  padding: 0.25rem 0;
 }
 
 .book-author {
-  /* ... */
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #4386bf;
 }
 
 .interactions {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .interactions > li {
   border: none;
   background-color: transparent;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+  padding: 0 1rem;
+  border-right: 1px solid #e8e8e8;
 }
 
-.book-progress {
+.interactions > li:first-child {
+  padding-left: 0;
+}
+
+.interactions > li:last-child {
+  border: none;
+}
+
+.interactions > li button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+}
+
+.book-item .book-progress {
   display: flex;
+  align-items: center;
+  gap: 0.688rem;
 }
 
 .circular-progressbar {
-  width: 4.25rem;
+  width: 5.62rem;
 }
 
-.book-chapter {
-  /* ... */
+.percent-num, 
+.percent-txt {
+  font-family: 'Montserrat', sans-serif;
 }
+
+.percent-num {
+  font-size: 2rem;
+}
+
+.percent-txt {
+  font-size: 0.875rem;
+  opacity: 0.5;
+}
+
+.book-item .vert-separator {
+  background-color: #e8e8e8;
+  width: 0.125rem;
+  height: 4.375rem;
+}
+
+.book-item .book-chapter {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}
+
+.book-chapter p {
+  margin-bottom: 0.438rem;
+}
+
+.book-chapter button {
+  margin-top: 1rem;
+}
+
+.book-chapter .chapter-title {
+  font-size: 0.813rem;
+  opacity: 0.5;
+}
+
+.book-chapter .chapter-title {
+  font-size: 1rem;
+  letter-spacing: -0.4px;
+}
+
