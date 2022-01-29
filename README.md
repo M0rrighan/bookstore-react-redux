@@ -42,7 +42,7 @@ npm start
 
 - GitHub: [@M0rrighan](https://github.com/M0rrighan)
 - Twitter: [@RadmilaStojceva](https://twitter.com/RadmilaStojceva)
-- LinedIn: [@Radmila Stojceva](https://www.linkedin.com/in/radmila-stojceva-71a838212)
+- LinedIn: [@Radmila Stojceva](https://www.linkedin.com/in/radmila-stojceva/)
 
 ## Show your support
 
