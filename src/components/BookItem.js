@@ -42,20 +42,21 @@ const BookItem = (props) => {
         <CircularProgressbar
           className="circular-progressbar"
           value={progressPercent}
-          style={{ width: '4.25rem', height: '4.25rem' }}
+          // style={{ width: '5.62rem', height: '5.62rem' }}
         />
         <div>
-          <p>
+          <p className="percent-num">
             {progressPercent}
             %
           </p>
-          <p>completed</p>
+          <p className="percent-txt">Completed</p>
         </div>
       </div>
+      <div className="vert-separator" />
       <div className="book-chapter">
-        <p className="upper">Current Chapter</p>
-        <p>{chapter}</p>
-        <button type="button" className="upper">Update Progress</button>
+        <p className="upper chapter-title">Current Chapter</p>
+        <p className="chapter-name">{chapter}</p>
+        <button type="button" className="button upper">Update Progress</button>
       </div>
     </div>
   );

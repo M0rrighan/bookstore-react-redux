@@ -5,6 +5,8 @@ import Books from './pages/Books';
 import Categories from './pages/Categories';
 import Header from './components/Header';
 
+import './App.css';
+
 const App = () => (
   <Router>
     <div>

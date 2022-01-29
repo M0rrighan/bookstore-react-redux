@@ -61,6 +61,7 @@ function NewBookForm() {
     dispatch(addNewBook(newBook));
     // reset input fields
     setTitle('');
+    setCategory('');
     // setAuthor('');
   };
 
@@ -75,7 +76,7 @@ function NewBookForm() {
   };
 
   return (
-    <div>
+    <div className="form-container">
       <h2>ADD NEW BOOK</h2>
       <form onSubmit={submitBookToStore}>
         <input
@@ -93,15 +94,18 @@ function NewBookForm() {
           required
         /> */}
         <select
+          className="select-categories"
+          placeholder="Category"
           onChange={updateCategory}
-          defaultValue="Unset"
+          defaultValue=""
+          id="categories"
           required
         >
-          <option value="Unset" disabled hidden>Category</option>
+          <option key="" value="" disabled>Category</option>
           {selectOptions}
         </select>
 
-        <button type="submit">Add book</button>
+        <button className="button upper" type="submit">Add book</button>
       </form>
     </div>
   );
